@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Job Form</title>
+<style>
+body{
+background-image:url("resources/savejob.jpg");
+}
+</style>
+</head>
+<body>
+<div class="container">
+<span style="color:red">{{error.message}}</span>
+
+<form class="form-horizontal">
+
+<div class="form-group">
+      <label class="control-label col-sm-3" for="jobTitle" ><span style="color:white;"class="pull-left">Enter Job Title :</span></label>
+      <div class="col-sm-6">
+      <input type="text" ng-model="job.jobTitle" class="form-control" required="">
+      </div>
+</div>
+
+<div class="form-group">
+      <label class="control-label col-sm-3" for="jobDescription"><span style="color:white;" class="pull-left">Enter Job Description :</span></label>
+      <div class="col-sm-6">
+      <textarea rows="4"  ng-model="job.jobDescription" class="form-control" required=""></textarea>
+      </div>
+</div>
+
+<div class="form-group">
+      <label class="control-label col-sm-3" for="skillRequired"><span style="color:white;" class="pull-left">Enter Skills Required :</span></label>
+      <div class="col-sm-6">
+      <input type="text" ng-model="job.skillRequired" class="form-control" required="">
+      </div>
+</div>
+
+<div class="form-group">
+      <label class="control-label col-sm-3" for="yrsOfExp"><span style="color:white;" class="pull-left">Enter Years Of Experience : </span></label>
+      <div class="col-sm-6">
+      <input type="text" ng-model="job.yrsOfExp" class="form-control" required="">
+      </div>
+</div>
+
+<div class="form-group">
+      <label class="control-label col-sm-3" for="salary"><span style="color:white;" class="pull-left">Enter Salary :</span> </label>
+      <div class="col-sm-6">
+      <input type="text" ng-model="job.salary" class="form-control" required="">
+      </div>
+</div>
+
+<div class="form-group">
+      <label class="control-label col-sm-3" for="location"><span style="color:white;" class="pull-left">Enter Location : </span></label>
+      <div class="col-sm-6">
+      <input type="text" ng-model="job.location" class="form-control" required="">
+      </div>
+</div>
+
+<div class="form-group">
+       <label class="control-label col-sm-3" for="companyname"><span style="color:white;" class="pull-left">Enter Company Name :</span></label>
+       <div class="col-sm-6">
+       <input type="text" ng-model="job.companyname" class="form-control" required="">
+       </div>
+</div>
+
+<div class="form-group">
+     <div class="col-sm-offset-3 col-sm-6">
+     <button type="submit" ng-click="saveJob()" class="btn btn-success"> Submit </button>
+     </div>
+</div>
+</form>
+
+</div> 
+</body>
+</html>
